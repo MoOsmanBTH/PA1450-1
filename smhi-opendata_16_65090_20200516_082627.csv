@@ -1,0 +1,35 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Karlskrona-Söderstjerna Mo;65090;0.0
+
+Parameternamn;Beskrivning;Enhet
+Total molnmängd;momentanvärde, 1 gång/tim;percent
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+2010-03-01 00:00:00;2020-05-16 08:00:00;2.0;56.1498;15.5921
+
+Datum;Tid (UTC);Total molnmängd;Kvalitet;;Tidsutsnitt:
+2020-05-15;08:00:00;13;G;;Data från senaste dygnet
+2020-05-15;09:00:00;50;G;;Tidsperiod (fr.o.m.) = 2020-05-15 07:00:01 (UTC)
+2020-05-15;10:00:00;25;G;;Tidsperiod (t.o.m.) = 2020-05-16 08:00:00 (UTC)
+2020-05-15;11:00:00;38;G;;Samplingstid = Ej angivet
+2020-05-15;12:00:00;25;G;;
+2020-05-15;13:00:00;13;G;;Kvalitetskoderna:
+2020-05-15;14:00:00;13;G;;Grön (G) = Kontrollerade och godkända värden.
+2020-05-15;15:00:00;25;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+2020-05-15;16:00:00;50;G;;
+2020-05-15;17:00:00;13;G;;Orsaker till saknade data:
+2020-05-15;18:00:00;25;G;;  stationen eller givaren har varit ur funktion.
+2020-05-15;19:00:00;13;G
+2020-05-15;20:00:00;0;G
+2020-05-15;21:00:00;0;G
+2020-05-15;22:00:00;25;G
+2020-05-15;23:00:00;25;G
+2020-05-16;00:00:00;25;G
+2020-05-16;01:00:00;0;G
+2020-05-16;02:00:00;0;G
+2020-05-16;03:00:00;13;G
+2020-05-16;04:00:00;0;G
+2020-05-16;05:00:00;0;G
+2020-05-16;06:00:00;0;G
+2020-05-16;07:00:00;0;G
+2020-05-16;08:00:00;13;G

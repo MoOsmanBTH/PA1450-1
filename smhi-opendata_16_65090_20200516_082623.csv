@@ -1,0 +1,21 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Karlskrona-Söderstjerna Mo;65090;0.0
+
+Parameternamn;Beskrivning;Enhet
+Total molnmängd;momentanvärde, 1 gång/tim;percent
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+2010-03-01 00:00:00;2020-05-16 08:00:00;2.0;56.1498;15.5921
+
+Datum;Tid (UTC);Total molnmängd;Kvalitet;;Tidsutsnitt:
+2020-05-16;08:00:00;13;G;;Data från senaste timmen
+;;;;;Tidsperiod (fr.o.m.) = 2020-05-16 07:00:01 (UTC)
+;;;;;Tidsperiod (t.o.m.) = 2020-05-16 08:00:00 (UTC)
+;;;;;Samplingstid = Ej angivet
+;;;;;
+;;;;;Kvalitetskoderna:
+;;;;;Grön (G) = Kontrollerade och godkända värden.
+;;;;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+;;;;;
+;;;;;Orsaker till saknade data:
+;;;;;  stationen eller givaren har varit ur funktion.
