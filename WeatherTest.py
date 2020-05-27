@@ -1,7 +1,4 @@
-# Har en lösning på varenda här kända bugg, men tiden räcker inte till as Galois famously said
-# OK Roytard! Max 10 stations at'da time! For now anywhey cuz like.. do you want the program to "RAM" up ya A-SS ?!?
 # Kan existera bugg med station = 0
-# This is GREEN HEALTHY CODE FYI!!!
 import pandas as pd
 from pandas.io.json import json_normalize
 import json, requests
