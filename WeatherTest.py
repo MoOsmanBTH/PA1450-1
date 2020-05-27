@@ -146,6 +146,27 @@ def change_period(dataframe, start_date, end_date, start_hour, end_hour):
     return ret_lst
 
 
+def create_graph(dataframe, period):
+            fig, ax = plt.subplots()
+            ax.set_title("Online Weather")
+            ax.set_ylabel("Lufttemperatur")
+            ax.set_xlabel("Datum")
+
+            x_values = dataframe[period[2][1][0]:period[3][1][0]]['Datum'].tolist()
+            y_values = dataframe[period[2][1][0]:period[3][1][0]]['Lufttemperatur'].tolist()
+            
+            x = []
+            y = []
+            for a in range(0, len(y_values), 18):
+                x.append(x_values[a])
+                y.append(float(y_values[a]))
+            ax.plot(x, y)
+            ax.grid(True)
+            ax.set_ylim(0.0 , 100.0)
+            fig.autofmt_xdate()
+            plt.show()
+
+
 #===========================================
 # ____MAIN____
 #===========================================
@@ -156,11 +177,11 @@ if __name__ == "__main__":
     df = get_weather_data(station_1.get_station_url())
 
     # Default period
-    periodlist = change_period(df, "2020-01-01", "2020-02-01", "00:00:00", "00:00:00")
+    periodlist = change_period(df, "2015-01-01", "2016-02-01", "00:00:00", "00:00:00")
 
     #df.apply(lambda r : pd.datetime.combine(datetime.date(r['Datum']), datetime.time(r['Tid'])).time(), 1)
     #df['DateTime']
-    print(df.head())
+    # print(df.head())
     #====================
     # Loop  with menu...
     #====================
@@ -173,16 +194,16 @@ if __name__ == "__main__":
 #====================================================================
         # 0: Graph Data
         if str(usr_choice) == '0':
-            None
+                create_graph(df, periodlist)
             # print(df.head())
-            df = get_weather_data(station_1.get_station_url())
+            # df = get_weather_data(station_1.get_station_url())
             # df['Datum'] = df['Datum'].apply(lambda x: pd.Timestamp(x).strftime('%B-%d-%Y %I:%M %p'))
             # df['Datum'] = pd.to_datetime(df['Datum'])
-            df.loc[:,'Datum'] = pd.to_datetime(df.Datum.astype(str)+' '+df.Tid.astype(str))
+            # df.loc[:,'Datum'] = pd.to_datetime(df.Datum.astype(str)+' '+df.Tid.astype(str))
             # print(df.head())
-            df.Datum = pd.to_numeric(df.Datum)
-            df.plot(figsize=(15,4))
-            df.plot(x="Datum", y="Lufttemperatur", style='.')
+            # df.Datum = pd.to_numeric(df.Datum)
+            # df.plot(figsize=(15,4))
+            # df.plot(x="Datum", y="Lufttemperatur", style='.')
 #====================================================================
 #====================================================================
 #====================================================================        
